@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A304FD5026F4F9A60078D534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304FD4F26F4F9A60078D534 /* AppDelegate.swift */; };
+		A304FD5226F4F9A70078D534 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304FD5126F4F9A70078D534 /* SceneDelegate.swift */; };
+		A304FD5426F4F9A70078D534 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304FD5326F4F9A70078D534 /* HomeViewController.swift */; };
+		A304FD5726F4F9A70078D534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A304FD5526F4F9A70078D534 /* Main.storyboard */; };
+		A304FD5A26F4F9A70078D534 /* SonyLIV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A304FD5826F4F9A70078D534 /* SonyLIV.xcdatamodeld */; };
+		A304FD5C26F4F9A90078D534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A304FD5B26F4F9A90078D534 /* Assets.xcassets */; };
+		A304FD5F26F4F9A90078D534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A304FD5D26F4F9A90078D534 /* LaunchScreen.storyboard */; };
+		A304FD6A26F4F9A90078D534 /* SonyLIVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304FD6926F4F9A90078D534 /* SonyLIVTests.swift */; };
+		A304FD7526F4F9A90078D534 /* SonyLIVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304FD7426F4F9A90078D534 /* SonyLIVUITests.swift */; };
+		A304FD8926F4FCF90078D534 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304FD8826F4FCF90078D534 /* APIClient.swift */; };
+		A304FD8B26F4FF5B0078D534 /* BeerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304FD8A26F4FF5B0078D534 /* BeerViewModel.swift */; };
+		A304FD8D26F5020A0078D534 /* BeerMDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304FD8C26F5020A0078D534 /* BeerMDO.swift */; };
+		A3A6FD2426F51FFF001972E1 /* BeerTbDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FD2326F51FFF001972E1 /* BeerTbDataSource.swift */; };
+		A3A6FD2826F5A8F3001972E1 /* SLNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FD2726F5A8F3001972E1 /* SLNetworkHelper.swift */; };
+		A3A6FD2A26F5A958001972E1 /* SLReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FD2926F5A958001972E1 /* SLReachability.swift */; };
+		A3A6FD5F26F5CAA0001972E1 /* UIImageView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FD5E26F5CAA0001972E1 /* UIImageView+Extention.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A304FD6626F4F9A90078D534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A304FD4426F4F9A60078D534 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A304FD4B26F4F9A60078D534;
+			remoteInfo = SonyLIV;
+		};
+		A304FD7126F4F9A90078D534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A304FD4426F4F9A60078D534 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A304FD4B26F4F9A60078D534;
+			remoteInfo = SonyLIV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A304FD4C26F4F9A60078D534 /* SonyLIV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonyLIV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A304FD4F26F4F9A60078D534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A304FD5126F4F9A70078D534 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A304FD5326F4F9A70078D534 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A304FD5626F4F9A70078D534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A304FD5926F4F9A70078D534 /* SonyLIV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SonyLIV.xcdatamodel; sourceTree = "<group>"; };
+		A304FD5B26F4F9A90078D534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A304FD5E26F4F9A90078D534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A304FD6026F4F9A90078D534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A304FD6526F4F9A90078D534 /* SonyLIVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SonyLIVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A304FD6926F4F9A90078D534 /* SonyLIVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonyLIVTests.swift; sourceTree = "<group>"; };
+		A304FD6B26F4F9A90078D534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A304FD7026F4F9A90078D534 /* SonyLIVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SonyLIVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A304FD7426F4F9A90078D534 /* SonyLIVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonyLIVUITests.swift; sourceTree = "<group>"; };
+		A304FD7626F4F9A90078D534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A304FD8826F4FCF90078D534 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		A304FD8A26F4FF5B0078D534 /* BeerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewModel.swift; sourceTree = "<group>"; };
+		A304FD8C26F5020A0078D534 /* BeerMDO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerMDO.swift; sourceTree = "<group>"; };
+		A3A6FD2326F51FFF001972E1 /* BeerTbDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTbDataSource.swift; sourceTree = "<group>"; };
+		A3A6FD2726F5A8F3001972E1 /* SLNetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLNetworkHelper.swift; sourceTree = "<group>"; };
+		A3A6FD2926F5A958001972E1 /* SLReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLReachability.swift; sourceTree = "<group>"; };
+		A3A6FD5E26F5CAA0001972E1 /* UIImageView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extention.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A304FD4926F4F9A60078D534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A304FD6226F4F9A90078D534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A304FD6D26F4F9A90078D534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A304FD4326F4F9A60078D534 = {
+			isa = PBXGroup;
+			children = (
+				A304FD4E26F4F9A60078D534 /* SonyLIV */,
+				A304FD6826F4F9A90078D534 /* SonyLIVTests */,
+				A304FD7326F4F9A90078D534 /* SonyLIVUITests */,
+				A304FD4D26F4F9A60078D534 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A304FD4D26F4F9A60078D534 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A304FD4C26F4F9A60078D534 /* SonyLIV.app */,
+				A304FD6526F4F9A90078D534 /* SonyLIVTests.xctest */,
+				A304FD7026F4F9A90078D534 /* SonyLIVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A304FD4E26F4F9A60078D534 /* SonyLIV */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FD2B26F5AAFC001972E1 /* ImageDownloader */,
+				A3A6FD2626F5A8AD001972E1 /* Utilities */,
+				A304FD8526F4FA770078D534 /* NetworkManager */,
+				A304FD8226F4F9F70078D534 /* Model */,
+				A304FD8326F4FA000078D534 /* View */,
+				A304FD8426F4FA0A0078D534 /* VIewModel */,
+				A304FD4F26F4F9A60078D534 /* AppDelegate.swift */,
+				A304FD5126F4F9A70078D534 /* SceneDelegate.swift */,
+				A304FD5526F4F9A70078D534 /* Main.storyboard */,
+				A304FD5B26F4F9A90078D534 /* Assets.xcassets */,
+				A304FD5D26F4F9A90078D534 /* LaunchScreen.storyboard */,
+				A304FD6026F4F9A90078D534 /* Info.plist */,
+				A304FD5826F4F9A70078D534 /* SonyLIV.xcdatamodeld */,
+			);
+			path = SonyLIV;
+			sourceTree = "<group>";
+		};
+		A304FD6826F4F9A90078D534 /* SonyLIVTests */ = {
+			isa = PBXGroup;
+			children = (
+				A304FD6926F4F9A90078D534 /* SonyLIVTests.swift */,
+				A304FD6B26F4F9A90078D534 /* Info.plist */,
+			);
+			path = SonyLIVTests;
+			sourceTree = "<group>";
+		};
+		A304FD7326F4F9A90078D534 /* SonyLIVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A304FD7426F4F9A90078D534 /* SonyLIVUITests.swift */,
+				A304FD7626F4F9A90078D534 /* Info.plist */,
+			);
+			path = SonyLIVUITests;
+			sourceTree = "<group>";
+		};
+		A304FD8226F4F9F70078D534 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A304FD8C26F5020A0078D534 /* BeerMDO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A304FD8326F4FA000078D534 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A304FD5326F4F9A70078D534 /* HomeViewController.swift */,
+				A3A6FD2326F51FFF001972E1 /* BeerTbDataSource.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A304FD8426F4FA0A0078D534 /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A304FD8A26F4FF5B0078D534 /* BeerViewModel.swift */,
+			);
+			path = VIewModel;
+			sourceTree = "<group>";
+		};
+		A304FD8526F4FA770078D534 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				A304FD8826F4FCF90078D534 /* APIClient.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		A3A6FD2626F5A8AD001972E1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FD2726F5A8F3001972E1 /* SLNetworkHelper.swift */,
+				A3A6FD2926F5A958001972E1 /* SLReachability.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A3A6FD2B26F5AAFC001972E1 /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FD5E26F5CAA0001972E1 /* UIImageView+Extention.swift */,
+			);
+			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A304FD4B26F4F9A60078D534 /* SonyLIV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A304FD7926F4F9A90078D534 /* Build configuration list for PBXNativeTarget "SonyLIV" */;
+			buildPhases = (
+				A304FD4826F4F9A60078D534 /* Sources */,
+				A304FD4926F4F9A60078D534 /* Frameworks */,
+				A304FD4A26F4F9A60078D534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SonyLIV;
+			productName = SonyLIV;
+			productReference = A304FD4C26F4F9A60078D534 /* SonyLIV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A304FD6426F4F9A90078D534 /* SonyLIVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A304FD7C26F4F9A90078D534 /* Build configuration list for PBXNativeTarget "SonyLIVTests" */;
+			buildPhases = (
+				A304FD6126F4F9A90078D534 /* Sources */,
+				A304FD6226F4F9A90078D534 /* Frameworks */,
+				A304FD6326F4F9A90078D534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A304FD6726F4F9A90078D534 /* PBXTargetDependency */,
+			);
+			name = SonyLIVTests;
+			productName = SonyLIVTests;
+			productReference = A304FD6526F4F9A90078D534 /* SonyLIVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A304FD6F26F4F9A90078D534 /* SonyLIVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A304FD7F26F4F9A90078D534 /* Build configuration list for PBXNativeTarget "SonyLIVUITests" */;
+			buildPhases = (
+				A304FD6C26F4F9A90078D534 /* Sources */,
+				A304FD6D26F4F9A90078D534 /* Frameworks */,
+				A304FD6E26F4F9A90078D534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A304FD7226F4F9A90078D534 /* PBXTargetDependency */,
+			);
+			name = SonyLIVUITests;
+			productName = SonyLIVUITests;
+			productReference = A304FD7026F4F9A90078D534 /* SonyLIVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A304FD4426F4F9A60078D534 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A304FD4B26F4F9A60078D534 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					A304FD6426F4F9A90078D534 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A304FD4B26F4F9A60078D534;
+					};
+					A304FD6F26F4F9A90078D534 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A304FD4B26F4F9A60078D534;
+					};
+				};
+			};
+			buildConfigurationList = A304FD4726F4F9A60078D534 /* Build configuration list for PBXProject "SonyLIV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A304FD4326F4F9A60078D534;
+			productRefGroup = A304FD4D26F4F9A60078D534 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A304FD4B26F4F9A60078D534 /* SonyLIV */,
+				A304FD6426F4F9A90078D534 /* SonyLIVTests */,
+				A304FD6F26F4F9A90078D534 /* SonyLIVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A304FD4A26F4F9A60078D534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A304FD5F26F4F9A90078D534 /* LaunchScreen.storyboard in Resources */,
+				A304FD5C26F4F9A90078D534 /* Assets.xcassets in Resources */,
+				A304FD5726F4F9A70078D534 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A304FD6326F4F9A90078D534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A304FD6E26F4F9A90078D534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A304FD4826F4F9A60078D534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A6FD2426F51FFF001972E1 /* BeerTbDataSource.swift in Sources */,
+				A3A6FD2826F5A8F3001972E1 /* SLNetworkHelper.swift in Sources */,
+				A304FD8B26F4FF5B0078D534 /* BeerViewModel.swift in Sources */,
+				A3A6FD2A26F5A958001972E1 /* SLReachability.swift in Sources */,
+				A304FD5A26F4F9A70078D534 /* SonyLIV.xcdatamodeld in Sources */,
+				A304FD5426F4F9A70078D534 /* HomeViewController.swift in Sources */,
+				A304FD5026F4F9A60078D534 /* AppDelegate.swift in Sources */,
+				A3A6FD5F26F5CAA0001972E1 /* UIImageView+Extention.swift in Sources */,
+				A304FD8D26F5020A0078D534 /* BeerMDO.swift in Sources */,
+				A304FD8926F4FCF90078D534 /* APIClient.swift in Sources */,
+				A304FD5226F4F9A70078D534 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A304FD6126F4F9A90078D534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A304FD6A26F4F9A90078D534 /* SonyLIVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A304FD6C26F4F9A90078D534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A304FD7526F4F9A90078D534 /* SonyLIVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A304FD6726F4F9A90078D534 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A304FD4B26F4F9A60078D534 /* SonyLIV */;
+			targetProxy = A304FD6626F4F9A90078D534 /* PBXContainerItemProxy */;
+		};
+		A304FD7226F4F9A90078D534 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A304FD4B26F4F9A60078D534 /* SonyLIV */;
+			targetProxy = A304FD7126F4F9A90078D534 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A304FD5526F4F9A70078D534 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A304FD5626F4F9A70078D534 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A304FD5D26F4F9A90078D534 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A304FD5E26F4F9A90078D534 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A304FD7726F4F9A90078D534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A304FD7826F4F9A90078D534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A304FD7A26F4F9A90078D534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SonyLIV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.SonyLIV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A304FD7B26F4F9A90078D534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SonyLIV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.SonyLIV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A304FD7D26F4F9A90078D534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SonyLIVTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.SonyLIVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SonyLIV.app/SonyLIV";
+			};
+			name = Debug;
+		};
+		A304FD7E26F4F9A90078D534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SonyLIVTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.SonyLIVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SonyLIV.app/SonyLIV";
+			};
+			name = Release;
+		};
+		A304FD8026F4F9A90078D534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SonyLIVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.SonyLIVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SonyLIV;
+			};
+			name = Debug;
+		};
+		A304FD8126F4F9A90078D534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SonyLIVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.SonyLIVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SonyLIV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A304FD4726F4F9A60078D534 /* Build configuration list for PBXProject "SonyLIV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A304FD7726F4F9A90078D534 /* Debug */,
+				A304FD7826F4F9A90078D534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A304FD7926F4F9A90078D534 /* Build configuration list for PBXNativeTarget "SonyLIV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A304FD7A26F4F9A90078D534 /* Debug */,
+				A304FD7B26F4F9A90078D534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A304FD7C26F4F9A90078D534 /* Build configuration list for PBXNativeTarget "SonyLIVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A304FD7D26F4F9A90078D534 /* Debug */,
+				A304FD7E26F4F9A90078D534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A304FD7F26F4F9A90078D534 /* Build configuration list for PBXNativeTarget "SonyLIVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A304FD8026F4F9A90078D534 /* Debug */,
+				A304FD8126F4F9A90078D534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A304FD5826F4F9A70078D534 /* SonyLIV.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A304FD5926F4F9A70078D534 /* SonyLIV.xcdatamodel */,
+			);
+			currentVersion = A304FD5926F4F9A70078D534 /* SonyLIV.xcdatamodel */;
+			path = SonyLIV.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A304FD4426F4F9A60078D534 /* Project object */;
+}
