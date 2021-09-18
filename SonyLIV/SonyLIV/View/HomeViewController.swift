@@ -6,11 +6,7 @@
 //
 //MMVM
 import UIKit
-class InfoCell:UITableViewCell {
-    @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var infoLbl: UILabel!
-    
-}
+
 class HomeViewController: UIViewController {
     var isLoading = false
     var beerViewModel :BeerViewModel?
@@ -61,19 +57,12 @@ extension HomeViewController : UITableViewDelegate {
             
         }
     }
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let viewModel = self.beerViewModel, viewModel.beerMDO.count > indexPath.row {
+            let detailsViewController : DetailsViewController  = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
+            detailsViewController.item = viewModel.beerMDO[indexPath.row]
+            self.show(detailsViewController, sender: self)
+        }
+    }
 }
-//Pagination--
-//extension HomeViewController {
-//
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//            let offsetY = scrollView.contentOffset.y
-//            let contentHeight = scrollView.contentSize.height
-//        if let viewModel = self.beerViewModel {
-//        if (offsetY > contentHeight - scrollView.frame.size.height) && !isLoading && !viewModel.pageFinished {
-//            viewModel.pageNumber = viewModel.pageNumber +  1
-//            self.beerViewModel?.fetchNewsData()
-//            }
-//        }
-//        }
-//}
+

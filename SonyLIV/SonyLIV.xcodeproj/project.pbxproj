@@ -23,6 +23,8 @@
 		A3A6FD2826F5A8F3001972E1 /* SLNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FD2726F5A8F3001972E1 /* SLNetworkHelper.swift */; };
 		A3A6FD2A26F5A958001972E1 /* SLReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FD2926F5A958001972E1 /* SLReachability.swift */; };
 		A3A6FD5F26F5CAA0001972E1 /* UIImageView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FD5E26F5CAA0001972E1 /* UIImageView+Extention.swift */; };
+		A3A6FD6626F5F7A4001972E1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FD6526F5F7A4001972E1 /* DetailsViewController.swift */; };
+		A3A6FD6826F62A90001972E1 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FD6726F62A90001972E1 /* TableViewCells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		A3A6FD2726F5A8F3001972E1 /* SLNetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLNetworkHelper.swift; sourceTree = "<group>"; };
 		A3A6FD2926F5A958001972E1 /* SLReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLReachability.swift; sourceTree = "<group>"; };
 		A3A6FD5E26F5CAA0001972E1 /* UIImageView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extention.swift"; sourceTree = "<group>"; };
+		A3A6FD6526F5F7A4001972E1 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		A3A6FD6726F62A90001972E1 /* TableViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCells.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,8 @@
 			children = (
 				A304FD5326F4F9A70078D534 /* HomeViewController.swift */,
 				A3A6FD2326F51FFF001972E1 /* BeerTbDataSource.swift */,
+				A3A6FD6526F5F7A4001972E1 /* DetailsViewController.swift */,
+				A3A6FD6726F62A90001972E1 /* TableViewCells.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -341,6 +347,8 @@
 				A304FD8D26F5020A0078D534 /* BeerMDO.swift in Sources */,
 				A304FD8926F4FCF90078D534 /* APIClient.swift in Sources */,
 				A304FD5226F4F9A70078D534 /* SceneDelegate.swift in Sources */,
+				A3A6FD6626F5F7A4001972E1 /* DetailsViewController.swift in Sources */,
+				A3A6FD6826F62A90001972E1 /* TableViewCells.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
