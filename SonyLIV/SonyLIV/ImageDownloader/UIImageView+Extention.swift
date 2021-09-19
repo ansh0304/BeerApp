@@ -25,7 +25,7 @@ extension UIImageView {
                 
                 //print("RESPONSE FROM API: \(response)")
                 if error != nil {
-                    SLLog.printLog("ERROR LOADING IMAGES FROM URL: \(String(describing: error))")
+                    SLLog.debug("ERROR LOADING IMAGES FROM URL: \(String(describing: error))")
                     DispatchQueue.main.async {
                         self.image = placeHolder
                     }

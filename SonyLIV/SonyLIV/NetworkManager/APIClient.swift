@@ -51,11 +51,11 @@ extension APIClient {
     typealias JSONTaskCompletionHandler = (Decodable?, APIError?) -> Void
     
     func getDataObject<T: Decodable>(url:String,decodingType: T.Type, parametrs:[String:Any], completion: @escaping  JSONTaskCompletionHandler) {
-        SLLog.printLog("Aravind -> \(url)")
+        SLLog.debug("Aravind -> \(url)")
         URLSession.shared.dataTask(with: URL(string: url)!) { (data, resp, err) in
             if let data = data {
                 let str = String(decoding: data, as: UTF8.self)
-                SLLog.printLog(str)
+                SLLog.debug(str)
                 do {
                     let genericModel = try JSONDecoder().decode(decodingType, from: data)
                     completion(genericModel, nil)
