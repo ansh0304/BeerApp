@@ -11,6 +11,7 @@ class BeerViewModel: NSObject {
     var pageFinished = false
     private var dataHandler : APIClient!
     var bindDataViewContollers : (()->Void)?
+    var networkNotReachable:(()->Void)?
     var pageNumber = 1
     private (set) var beerMDO:[BeerMDO]! {
         didSet {
@@ -20,9 +21,9 @@ class BeerViewModel: NSObject {
     override init() {
         super.init()
         self.dataHandler = BeersData()
-        self.fetchNewsData()
     }
     func fetchNewsData()  {
+        if SLNetworkHelper.shared().connectivityAvailable() {
         self.dataHandler.pageNumber = self.pageNumber
         self.dataHandler.fetchDataModel { [weak self](res:(Result<[BeerMDO], APIError>)) in
             switch res {
@@ -38,6 +39,10 @@ class BeerViewModel: NSObject {
             case .failure(let error):
                 print("the error \(error)")
             }
+        }
+         } else {
+            print("the error Network")
+            self.networkNotReachable?()
         }
     }
 }

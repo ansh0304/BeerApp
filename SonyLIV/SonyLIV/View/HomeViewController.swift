@@ -11,6 +11,11 @@ class HomeViewController: UIViewController {
     var isLoading = false
     var beerViewModel :BeerViewModel?
     private var dataSource:BeerTbDataSource<InfoCell,BeerMDO>!
+   
+    lazy var errorView: SonyLivOverlayContentView = {
+        let view = SonyLivOverlayContentView(frame: CGRect.zero)
+        return view
+    }()
     
     @IBOutlet weak var tbView: UITableView!
     
@@ -21,6 +26,10 @@ class HomeViewController: UIViewController {
         self.getData()
     }
     func getData() {
+        self.beerViewModel?.networkNotReachable = {
+            self.updateNetworkPopUP()
+        }
+        self.beerViewModel?.fetchNewsData()
         self.beerViewModel?.bindDataViewContollers = {
             self.updateUI()
         }
@@ -34,10 +43,22 @@ class HomeViewController: UIViewController {
                 }
             })
             DispatchQueue.main.async {
+                self.errorView.hide()
                 self.tbView.dataSource = self.dataSource
                 self.tbView.delegate = self
                 self.tbView.reloadData()
             }
+        }
+    }
+    func updateNetworkPopUP() {
+        if self.errorView.shown {
+            return
+        }
+        self.errorView.show(parent: self.view, with: "Network issue, please try again")
+        self.errorView.retryButton.setTitle("Relaod", for: .normal)
+        self.errorView.retryButton.isHidden = false
+        self.errorView.onRetryBlock = {
+            self.beerViewModel?.fetchNewsData()
         }
     }
 }

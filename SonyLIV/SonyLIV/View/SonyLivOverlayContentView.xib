@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SonyLivOverlayContentView" customModule="SonyLIV" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="Ni9-5s-jSL" id="kWW-SX-ZJ8"/>
+                <outlet property="contentView" destination="p1L-yk-2sY" id="wsh-k2-mMV"/>
+                <outlet property="messageLabel" destination="WAn-mK-4wU" id="wu7-bW-acl"/>
+                <outlet property="retryButton" destination="Ogv-nn-2ym" id="Rqz-3I-Lc9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="p1L-yk-2sY" userLabel="SonyLivOverlayContentView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mrl-Xg-cTD">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CJd-kc-5dR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ni9-5s-jSL">
+                    <rect key="frame" x="10" y="54" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Kjl-Kh-bzm"/>
+                        <constraint firstAttribute="height" constant="30" id="oVd-tm-SaO"/>
+                    </constraints>
+                    <state key="normal" image="slClose"/>
+                    <connections>
+                        <action selector="closeButtonDidClicked:" destination="-1" eventType="touchUpInside" id="Qc6-5s-Ru0"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAn-mK-4wU">
+                    <rect key="frame" x="20" y="439" width="374" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="0.80450021400000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogv-nn-2ym">
+                    <rect key="frame" x="167" y="477" width="80" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="6Ez-Zj-oSv"/>
+                        <constraint firstAttribute="width" constant="80" id="tAl-7X-tXW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <state key="normal" title="Retry">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="retryButtonDidClicked:" destination="-1" eventType="touchUpInside" id="z4y-LC-u2E"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="3Mw-S5-NoH"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="WAn-mK-4wU" firstAttribute="centerX" secondItem="p1L-yk-2sY" secondAttribute="centerX" id="0NR-S7-pGU"/>
+                <constraint firstItem="3Mw-S5-NoH" firstAttribute="trailing" secondItem="WAn-mK-4wU" secondAttribute="trailing" constant="20" id="0aX-VX-81p"/>
+                <constraint firstItem="WAn-mK-4wU" firstAttribute="leading" secondItem="3Mw-S5-NoH" secondAttribute="leading" constant="20" id="1Ag-EU-3qT"/>
+                <constraint firstItem="mrl-Xg-cTD" firstAttribute="leading" secondItem="p1L-yk-2sY" secondAttribute="leading" id="2TA-Tq-4uI"/>
+                <constraint firstItem="Ni9-5s-jSL" firstAttribute="top" secondItem="3Mw-S5-NoH" secondAttribute="top" constant="10" id="6tV-uW-iNU"/>
+                <constraint firstItem="WAn-mK-4wU" firstAttribute="centerY" secondItem="p1L-yk-2sY" secondAttribute="centerY" id="748-D8-yl2"/>
+                <constraint firstItem="Ni9-5s-jSL" firstAttribute="leading" secondItem="3Mw-S5-NoH" secondAttribute="leading" constant="10" id="DSF-3T-ZoD"/>
+                <constraint firstItem="Ogv-nn-2ym" firstAttribute="centerX" secondItem="p1L-yk-2sY" secondAttribute="centerX" id="INe-vi-21T"/>
+                <constraint firstAttribute="trailing" secondItem="mrl-Xg-cTD" secondAttribute="trailing" id="NSL-gh-RTA"/>
+                <constraint firstItem="mrl-Xg-cTD" firstAttribute="top" secondItem="p1L-yk-2sY" secondAttribute="top" id="XBv-0E-Dyd"/>
+                <constraint firstAttribute="bottom" secondItem="mrl-Xg-cTD" secondAttribute="bottom" id="kFH-RE-j8e"/>
+                <constraint firstItem="Ogv-nn-2ym" firstAttribute="top" secondItem="WAn-mK-4wU" secondAttribute="bottom" constant="20" id="u5h-sa-6DG"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="67"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="slClose" width="16" height="16"/>
+    </resources>
+</document>
