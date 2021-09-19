@@ -28,6 +28,7 @@
 		A3A6FD6A26F6FB9E001972E1 /* SonyLivOverlayContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FD6926F6FB9E001972E1 /* SonyLivOverlayContentView.swift */; };
 		A3A6FD6C26F6FBBA001972E1 /* SonyLivOverlayContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3A6FD6B26F6FBBA001972E1 /* SonyLivOverlayContentView.xib */; };
 		A3A6FD6E26F6FD4E001972E1 /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FD6D26F6FD4E001972E1 /* UIView+Extention.swift */; };
+		A3A6FD7026F70B6D001972E1 /* SLLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FD6F26F70B6D001972E1 /* SLLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		A3A6FD6926F6FB9E001972E1 /* SonyLivOverlayContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonyLivOverlayContentView.swift; sourceTree = "<group>"; };
 		A3A6FD6B26F6FBBA001972E1 /* SonyLivOverlayContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SonyLivOverlayContentView.xib; sourceTree = "<group>"; };
 		A3A6FD6D26F6FD4E001972E1 /* UIView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
+		A3A6FD6F26F70B6D001972E1 /* SLLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 		A3A6FD2626F5A8AD001972E1 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A3A6FD6F26F70B6D001972E1 /* SLLog.swift */,
 				A3A6FD2726F5A8F3001972E1 /* SLNetworkHelper.swift */,
 				A3A6FD2926F5A958001972E1 /* SLReachability.swift */,
 				A3A6FD6D26F6FD4E001972E1 /* UIView+Extention.swift */,
@@ -353,6 +356,7 @@
 				A3A6FD2A26F5A958001972E1 /* SLReachability.swift in Sources */,
 				A3A6FD6A26F6FB9E001972E1 /* SonyLivOverlayContentView.swift in Sources */,
 				A304FD5A26F4F9A70078D534 /* SonyLIV.xcdatamodeld in Sources */,
+				A3A6FD7026F70B6D001972E1 /* SLLog.swift in Sources */,
 				A304FD5426F4F9A70078D534 /* HomeViewController.swift in Sources */,
 				A304FD5026F4F9A60078D534 /* AppDelegate.swift in Sources */,
 				A3A6FD5F26F5CAA0001972E1 /* UIImageView+Extention.swift in Sources */,

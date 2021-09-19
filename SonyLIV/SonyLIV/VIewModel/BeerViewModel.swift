@@ -37,11 +37,11 @@ class BeerViewModel: NSObject {
                 }
                 strongSelf.beerMDO += result
             case .failure(let error):
-                print("the error \(error)")
+                SLLog.printLog("the error \(error)")
             }
         }
          } else {
-            print("the error Network")
+            SLLog.printLog("the error Network")
             self.networkNotReachable?()
         }
     }

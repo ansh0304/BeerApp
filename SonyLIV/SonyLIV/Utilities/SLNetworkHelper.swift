@@ -29,7 +29,7 @@ public extension SLNetworkHelper {
         reachability.startNotifier()
         
         reachability.onUnreachable = { reachability in
-            print("network unreachable")
+            SLLog.printLog("network unreachable")
         }
         reachability.onReachable = { [weak self] reachability in
             guard let self = self else { return }
