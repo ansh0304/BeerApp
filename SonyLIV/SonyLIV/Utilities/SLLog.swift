@@ -34,7 +34,7 @@ public enum SLLog {
     
     private static func log(level logLevel: Level, _ message: Any) {
         guard logLevel.rawValue <= SLLog.level.rawValue else { return }
-        print(message)
+        //print(message)
     }
     
    static func printLog<T>(_ message: T, file: String = #file, funcName: String = #function, lineNum: Int = #line) {
